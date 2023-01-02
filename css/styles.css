@@ -2493,7 +2493,6 @@ textarea.form-control {
   display: inline-block;
   font-weight: 400;
   color: #fdfdfd;
-  border-color: #ffffff;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2721,6 +2720,10 @@ fieldset:disabled a.btn {
 
 .btn-greygrey {
   background-color: #393939  !important;
+  }
+
+  .btn-atmos {
+    background-color: #262A34 !important;
   }
 
   .btn-lightgrey {
@@ -6393,6 +6396,14 @@ button.bg-dark:focus {
 }
 .bg-darkgrey {
   background-color: #393939  !important;
+}
+
+.bg-atmosphere {
+  background-color: #0B1026  !important;
+}
+
+.bg-atmos {
+  background-color: #262A34 !important;
 }
 
 .bg-grey {
@@ -10345,7 +10356,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 22rem 0;
-  background: #333333;
+  background: #0B1026;
   
   background-position: center;
   background-repeat: no-repeat;
@@ -10504,10 +10515,10 @@ body {
 
 @font-face {
   font-family: SFPROREG;
-  src: url(../Fonts/SFPRODISPLAYREGULAR.OTF);
+  src: url(../Fonts/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
 
 @font-face {
   font-family: SFPROBOLD;
-  src: url(../Fonts/SFPRODISPLAYBOLD.OTF);
+  src: url(../Fonts/SFPRODISPLAYBOLD.OTF) format("opentype") ;
 }
