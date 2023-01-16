@@ -8,7 +8,7 @@
         <meta name="description" content="Changing Retail Markets Via Web3" />
         <meta name="author" content="Atmosphere" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+       
         
 
         <!-- Ethereum Related -->
@@ -106,34 +106,9 @@
   background-color: #222222  !important;
   }
           </style>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              var but = document.getElementById("but");
-              var video = document.getElementById("vid");
-              var mediaDevices = navigator.mediaDevices;
-              vid.muted = true;
-              but.addEventListener("click", () => {
-        
-                // Accessing the user camera and video.
-                mediaDevices
-                  .getUserMedia({
-                    video: true,
-                    audio: true,
-                  })
-                  .then((stream) => {
-        
-                    // Changing the source of video to current stream.
-                    video.srcObject = stream;
-                    video.addEventListener("loadedmetadata", () => {
-                      video.play();
-                    });
-                  })
-                  .catch(alert);
-              });
-            });
-          </script>
+         
         <a class="btn btn-greygrey " style = "position: relative; padding: 0px 30px; right: 20px" ><img src="pics/pic/head.png" width = "40px" style = "position: relative; border-radius: 0%; top: 0px; left: 0px; ">
-          <a class="btn btn-greygrey " style = "position: relative; padding: 0px 30px; right: 20px" ><img src="pics/pic/atmosphere_logo.png" width = "30px" style = "position: relative; border-radius: 0%; top: 0px; left: 8px; ">
+          <a class="btn btn-greygrey " style = "position: relative; padding: 0px 30px; right: 20px" href = "Home" ><img src="pics/pic/atmosphere_logo.png" width = "30px" style = "position: relative; border-radius: 0%; top: 0px; left: 8px; ">
         <a class="btn btn-greygrey btn-outline-warning" style = " position: relative;padding: 0px 30px; left: 0px;" href=""><img src="pics/pic/shop.png" width = "40px" style = "position: relative; border-radius: 0%; top: 0px; ">
       
         </span> 
@@ -363,7 +338,7 @@ if (chainIDs !== "0x89") {
   document.getElementById("connecteth").innerHTML = accounts[0].substring(0,12) + "...";
 
 }
-                                        });
+                                        
         
         
     
@@ -386,7 +361,7 @@ if (chainIDs !== "0x89") {
           <!--input class = "text-black blur blur-rounded" type="text" style = "font-family: SFPROBOLD; top: -270px; left: 100px; position: relative;" placeholder="Search.."-->
 
           
-              <svg class = "animate__animated animate__fadeInUp"style = "font-family: SFPROBOLD; top: -270px; left: 35px; position: relative;" width="343" height="36" viewBox="0 0 343 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg id ="SearchModule" class = "animate__animated animate__fadeInUp"  style = "font-family: SFPROBOLD; top: -250px; left: 25px; position: relative;" width="343" height="36" viewBox="0 0 343 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="343" height="36" />
                 <g id="Light / Search Field">
                 <rect id="searchFieldBG" width="343" height="36" rx="10" fill="#424242" />
@@ -409,30 +384,46 @@ if (chainIDs !== "0x89") {
 
           <span class="badge badge-pill badge-light" style = "font-family: HansonBold;top: -240px; left: 40px; position: relative">Top 10</span-->
 
-          <div class="card-deck" style = "font-size: 11px; top: 70px; position: relative" >
+          <div class="card-deck"   style = "font-size: 11px; top: 70px; position: relative" >
 
-            <div class="card bg-grey animate__animated animate__slideInLeft" style="width: 25rem; top: -300px; left: 7px; position: relative">
+            <div id = "TopFeedModule" class="card bg-grey animate__animated animate__slideInLeft" style="width: 25rem; top: -300px; left: 10px; position: relative">
               <div class="card-body bg-atmos ">
-                <h5 class="card-title" style = "position: relative; font-family: SFPROBOLD; left: 40px">Top 10 Social Review Videos</h5>
+                <h5 class="card-title" style = "font-family: SFPROREG;"><span class=" card-title badge badge-pill badge-light bg-atmosphere text-white" >Videos</span>
+                  <span class=" card-title badge badge-pill badge-light bg-atmosphere text-white" >Top 10</span>
+                  <span class=" card-title badge badge-pill badge-light bg-atmosphere text-white" >Social Reviews</span></h5>
 
                 <img class="card-img-top rounded" src="pics\pic\0x0.jpg" style="width: 11rem; height: 8rem; padding-right: 10px; padding-bottom: 20px " alt="Card image cap">
+                <p1 style="right: 255px; position: absolute;">                  <span class="badge badge-pill badge-light" >Title</span>
+                </p1>
                 
                 <img class="card-img-top rounded" src="pics\pic\cover_image_1671125007.jpg.760x400_q85_crop_upscale.jpg" style="width: 11rem; height: 8rem; padding-bottom: 20px ;positon:relative;" alt="shein">
+                <p2 style="right: 85px; position: absolute;">                  <span class="badge badge-pill badge-light" >Title</span>
+                </p2>
                 <br>
                 <img class="card-img-top rounded" src="pics\pic\neonmarketplace-teaser.jpg" style="width: 11rem; height: 8rem; padding-right: 10px;" alt="Card image cap">
+                <p3 style="right: 255px; position: absolute;">                  <span class="badge badge-pill badge-light" >Title</span>
+                </p3>
                 <img class="card-img-top rounded" src="pics\pic\roland_coit_inside_of_two_18_8_.jpg" style="width: 11rem; height: 8rem;" alt="Card image cap">
+                <p4 style="right: 85px; position: absolute;">                  <span class="badge badge-pill badge-light" >Title</span>
+                </p4>
+
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+                <style>
+                  .mySlides {display:none;}
+                  </style>
 
               
                 <!--img src="pics/pic/210309_soan_act5f_hpMain_16x9_608.jpg" style="width: 6rem;" alt="..." class="rounded"-->
                 <br>
-                <div class="card-footer">
-                  <a href="#" class="card-link" style = "font-family: SFPROREG; font-size: 10px;" >More</a>
-                <a href="#" class="card-link" style = "font-family: SFPROREG; font-size: 10px;">></a>
+                <div class="card-footer" >
+                  <a href="#" class="card-link" style = "font-family: SFPROREG; font-size: 10px; left: 300px; position: absolute;" >More   ></a>
+                
                 </div>
                 
               </div>
             </div>
-            <div class="card bg-atmos animate__animated animate__slideInLeft" style="width: 25rem; top: -300px; left: 7px; position: relative">
+            <div id = "MiddleFeedModule" class="card bg-atmos animate__animated animate__slideInLeft" style="width: 25rem; top: -285px; left: 10px; position: relative">
               <img class="card-img-top" src="pics/pic/210309_soan_act5f_hpMain_16x9_608.jpg" alt="@UserName Youtube Video">
               <div class="card-body bg-atmos">
                 <p class="card-text" style = "font-family: SFPROBOLD; font-size: 20px;">Exploring the evolution of sneaker culture</p>
@@ -442,7 +433,7 @@ if (chainIDs !== "0x89") {
               </div>
             </div>
 
-            <div class="card bg-atmos animate__animated animate__slideInLeft" style="width: 25rem; top: -270px; left: 7px; position: relative">
+            <div id = "BottomFeedModule" class="card bg-atmos animate__animated animate__slideInLeft" style="width: 25rem; top: -270px; left: 10px; position: relative">
               <img class="card-img-top" src="pics/pic/shein.jpg" alt="@UserName Tweet">
               <div class="card-body bg-atmos">
                 <p class="card-text"  style = "font-family: SFPROBOLD; font-size: 20px;">EXCLUSIVE Chinese retailer Shein lacks disclosures, made false statements about factories</p>
@@ -484,11 +475,61 @@ if (chainIDs !== "0x89") {
         <!-- Footer-->
         <script>
           var modal = document.getElementById("myModal");
+
+          var TOP_FEED_MODULE = document.getElementById("TopFeedModule");
+
+          var MIDDLE_FEED_MODULE = document.getElementById("MiddleFeedModule");
+
+          var BOTTOM_FEED_MODULE = document.getElementById("BottomFeedModule");
+
+          var SEARCH_MODULE = document.getElementById("SearchModule");
         
           if (window.screen.width > 450 ) {
           modal.style.display = "block";
+          } 
+
+          if (window.screen.width < 380) {
+
+            SEARCH_MODULE.style.left = "16px";
+
+            TOP_FEED_MODULE.style.left = "0px";
+
+            MIDDLE_FEED_MODULE.style.left = "0px";
+
+            BOTTOM_FEED_MODULE.style.left = "0px";
+
           }
+
+          if (window.screen.width < 415 && window.screen.width > 410) {
+
+            SEARCH_MODULE.style.left = "35px";
+
+            TOP_FEED_MODULE.style.left = "20px";
+
+            MIDDLE_FEED_MODULE.style.left = "20px";
+
+            BOTTOM_FEED_MODULE.style.left = "20px";
+
+          }
+
+          if (window.screen.width < 391 && window.screen.width > 389) {
+
+            SEARCH_MODULE.style.left = "23px";
+
+            TOP_FEED_MODULE.style.left = "8px";
+
+            MIDDLE_FEED_MODULE.style.left = "8px";
+
+            BOTTOM_FEED_MODULE.style.left = "8px";
+
+          }
+
           console.log(window.screen.width);
+
+
+
+
+          
         
         </script>
       
@@ -539,8 +580,7 @@ const analytics = getAnalytics(app);
         <script src="js/scripts.js"></script>
         <script type="text/javascript" src="js/utils.js"></script>
         <script type="text/javascript" src="js/metaAcct.js"></script>
-        <script type="text/javascript" src="js/ABI_SPECIE.2.js"></script>
-        <script type="text/javascript" src="js/customerInfo.js"></script>
+      
         
         
     </body>
