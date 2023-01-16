@@ -1,3 +1,3 @@
-### SpecieCircle
+### Atmosphere
 
-SpecieCircle is a web3 merchant shop with items only purchasable with ethereum based crypto-currency.
+Changing Retail Markets via Web3 and Augmented Reality.
