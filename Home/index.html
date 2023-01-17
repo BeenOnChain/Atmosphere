@@ -26,12 +26,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap" rel="stylesheet"/>
-        <link href="home_css/styles.css" rel="stylesheet" />
-        <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
+        <link href="home_css/styles.1.css" rel="stylesheet" />
+        <link href="home_css/nucleo-icons.css" rel="stylesheet" />
+  <link href="home_css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
 
 
@@ -361,7 +360,7 @@ if (chainIDs !== "0x89") {
 
           <!--input class = "text-black blur blur-rounded" type="text" style = "font-family: SFPROBOLD; top: -270px; left: 100px; position: relative;" placeholder="Search.."-->
           <div id="main-content">
-          <button id = "atmoslogo"class="btn blur blur-rounded btn-greygrey animate__animated animate__fadeInDown" style = " position: relative;padding: 40px 40px; left: 80px; top: -130px; border-radius: 60%;  " ><img src="images/pic/Group.png" width = "150px" style = "position: relative; border-radius: 0%; top: 5px; left:0px " onclick = "SHIP_DATA();">
+          <button id = "atmoslogo"class="btn blur blur-rounded btn-greygrey animate__animated animate__fadeInDown" style = " position: relative;padding: 40px 40px; left: 80px; top: -100px; border-radius: 60%;  " ><img src="images/pic/Group.png" width = "150px" style = "position: relative; border-radius: 0%; top: 5px; left:0px " onclick = "SHIP_DATA();">
 
           </div>
 
@@ -397,15 +396,18 @@ if (chainIDs !== "0x89") {
               Toolbar.style.left = "147px";
 
               AtmosLogo.style.left = "72px";
+
+              AtmosLogo.style.top = "-150px";
+
   
               
 
   
             }
   
-            if (window.screen.width < 415 && window.screen.width > 410) {
+            if (window.screen.width < 415 && window.screen.width > 413) {
   
-              Scroller.style.top = "450px";
+              Scroller.style.top = "650px";
 
               Toolbar.style.left = "157px";
 
@@ -415,7 +417,44 @@ if (chainIDs !== "0x89") {
   
             if (window.screen.width < 391 && window.screen.width > 389) {
   
-              Scroller.style.top = "460px";
+              Scroller.style.top = "600px";
+
+              Toolbar.style.left = "157px";
+
+              AtmosLogo.style.left = "79px";
+  
+  
+            }
+
+            if (window.screen.width < 391 && window.screen.width > 389 && window.screen.height < 630 && window.screen.height > 623) {
+  
+              Scroller.style.top = "300px";
+
+              Toolbar.style.left = "157px";
+
+              AtmosLogo.style.left = "79px";
+
+              AtmosLogo.style.top = "-190px";
+  
+  
+            }
+
+            if (window.screen.width < 413 && window.screen.width > 411 && window.screen.height < 770) {
+  
+              Scroller.style.top = "510px";
+
+              Toolbar.style.left = "159px";
+
+              AtmosLogo.style.left = "91px";
+
+              AtmosLogo.style.top = "-120px";
+  
+  
+            }
+
+            if (window.screen.width < 396 && window.screen.width > 392) {
+  
+              Scroller.style.top = "600px";
 
               Toolbar.style.left = "157px";
 
