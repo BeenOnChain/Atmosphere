@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -2492,15 +2492,14 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #fdfdfd;
   text-align: center;
   vertical-align: middle;
+  text-transform: capitalize;
+  
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: white;
-  border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -2722,6 +2721,13 @@ fieldset:disabled a.btn {
   background-color: #393939  !important;
   }
 
+.btn-atmosoutline {
+   background-color: #262A34 !important;
+   border-color: #393939 !important;
+   outline-width: thick;
+}
+    
+
   .btn-atmos {
     background-color: #262A34 !important;
   }
@@ -2840,6 +2846,11 @@ fieldset:disabled a.btn {
 .btn-outline-primary {
   color: #fffb14;
   border-color: #fffb14;
+}
+
+.btn-outline-atmos {
+  color: #393939;
+  border-color: #393939;
 }
 
 .btn-outline-retro {
@@ -3044,7 +3055,7 @@ fieldset:disabled a.btn {
 }
 .blur {
 
-  color: #ffffff00;
+
 }
 
 .blur.saturation-less {
@@ -4523,8 +4534,8 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  
 }
 .card > hr {
   margin-right: 0;
@@ -5221,7 +5232,7 @@ a.badge-black:focus, a.badge-black.focus {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  border-radius: 0.25rem;
+  background-color: #11192C !important
 }
 
 .list-group-item-action {
@@ -5244,8 +5255,8 @@ a.badge-black:focus, a.badge-black.focus {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #11192C;
+  border: 5px solid #262A34;
 }
 .list-group-item:first-child {
   border-top-left-radius: inherit;
@@ -6400,6 +6411,10 @@ button.bg-dark:focus {
 
 .bg-atmosphere {
   background-color: #0B1026  !important;
+}
+
+.bg-atmosblue {
+  background-color: #11192C !important;
 }
 
 .bg-atmos {
@@ -10365,6 +10380,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1;
 }
 .masthead h1 {
   font-family: 'SFPROREG', monospace;  font-size: 2.5rem;
@@ -10525,44 +10541,69 @@ body {
 #main-content {
     position:relative;
     width:100%;
-    height:300px;
     z-index:1;
 }
 #scroller {
     position:absolute;
     top:0;
     width:100%;
-    height:500px;
+    height:1000px;
     overflow:auto;
+    z-index:1;
 }
 #wrapper {
     position:relative;
     width:100%;
     height:500px;
+    z-index:1;
+
 }
 #toolbar-and-content {
     position:absolute;
     bottom:0;
     width:100%;
-    height:240px;
-    z-index:2;
+    height:100%;
+    z-index:500;
+    overflow:auto;
+    overflow-x: hidden;
+    overscroll-behavior: auto;
+
+
+
+
 }
 #toolbar {
+
     position:relative;
-    width:20%;
-    height:3px;
-    left: 160px;
-    top: -110px;
-    background-color:white;
+    width:10%;
+    height:6px;
+    left: 178px;
+    top: 750px;
+    overflow:visible;
+    background-color: grey;
     border-radius: 40px;
+    z-index:501;
+    
 
 }
 #toolbar-content {
-    position:relative;
-    top:-100px;
-    width:100%;
-    height:800px;
+    position:absolute;
+    width:fit-content;
+    height:100%;
+    top:730px;
     background-color: #11192C;
     border-radius: 40px;
+    z-index:500;
+overflow: auto;
+overflow-x:hidden;
+overflow-y:hidden;
+
 
 }
+
+.disableScroll{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+
